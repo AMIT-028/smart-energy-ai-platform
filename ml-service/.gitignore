@@ -1,0 +1,5 @@
+# Environment variables
+.env
+
+# Models folder (optional, but recommended)
+models/
