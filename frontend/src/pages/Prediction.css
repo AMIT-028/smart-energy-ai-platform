@@ -1,0 +1,50 @@
+.prediction-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: #f7f9ff;
+  min-height: 100vh;
+}
+
+.prediction-card {
+  width: 900px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.prediction-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.chart-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.prediction-label {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.prediction-value {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

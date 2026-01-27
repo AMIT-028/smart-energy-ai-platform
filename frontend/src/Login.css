@@ -1,0 +1,201 @@
+/* Import a font like Inter for a similar look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5; /* Light gray background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- Login Page Styles --- */
+
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.login-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Left Branding Side */
+.login-branding {
+  flex: 1;
+  background-color: #1d68bd; /* Your brand blue color */
+  color: #fff;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.branding-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.branding-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.branding-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Right Form Side */
+.login-form-section {
+  flex: 1;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #fde0dc;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1d68bd;
+}
+
+/* Password Input Wrapper for Icon */
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #1d68bd;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.login-button:hover {
+  background-color: #165296;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.signup-link {
+  color: #1d68bd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.back-to-home-wrapper {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+}
+
+.back-to-home-link {
+    color: #6c757d;
+    font-weight: 500;
+    text-decoration: none;
+}
+.back-to-home-link:hover {
+    color: #1d68bd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .login-branding {
+    padding: 3rem 2rem;
+  }
+  .login-form-section {
+    padding: 3rem 2rem;
+  }
+  .branding-title {
+      font-size: 2rem;
+  }
+  .form-title {
+      font-size: 1.75rem;
+  }
+}

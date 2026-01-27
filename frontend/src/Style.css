@@ -1,0 +1,241 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #212529;
+}
+
+/*--- Brand Colors ---*/
+:root {
+    --em-blue-primary: #1d68bd;
+    --em-blue-light: #d8e6f8;
+}
+
+/*--- Navbar Customization ---*/
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.brand-icon {
+    color: var(--em-blue-primary);
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    margin-left: 1rem;
+}
+
+.btn-signup {
+    background-color: var(--em-blue-primary);
+    border-color: var(--em-blue-primary);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-signup:hover {
+    background-color: #165296;
+    border-color: #165296;
+}
+
+/*--- Hero Section Customization ---*/
+.hero-section {
+    padding: 80px 0;
+}
+
+.hero-title {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 2.5rem;
+}
+
+.btn-get-started {
+    background-color: var(--em-blue-primary);
+    border-color: var(--em-blue-primary);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    color: white;
+}
+.btn-get-started:hover {
+    background-color: #165296;
+    color: white;
+}
+
+.btn-learn-more {
+    background-color: var(--em-blue-light);
+    color: var(--em-blue-primary);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+}
+.btn-learn-more:hover {
+    background-color: #c0d8f5;
+    color: #165296;
+}
+
+.dashboard-preview {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+/*--- Features Section Customization ---*/
+.features-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.features-title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--em-blue-primary);
+    color: white;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/*--- About Us Section (Placeholder) ---*/
+/*--- About Us Section ---*/
+.about-us-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.about-us-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #1d1d1d;
+}
+
+.about-us-text {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.about-us-text p {
+    margin-bottom: 1.8rem;
+}
+
+/* Optional soft fade animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*--- Footer Section ---*/
+.footer {
+    background-color: #f1f3f5;
+    padding: 60px 0 20px;
+    margin-top: 80px;
+    color: #4a4a4a;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h3.footer-logo {
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #1d68bd;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    line-height: 1.7;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+    color: #1d68bd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #6c757d;
+}

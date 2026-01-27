@@ -1,0 +1,147 @@
+.devices-container {
+  width: 100%;
+  padding: 35px 50px;
+  background: #f5f7fb;   /* matches design */
+  min-height: 100vh;
+  box-sizing: border-box;
+  max-width: 1400px;   /* same width as dashboard */
+  margin: 0 auto;      
+}
+
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.add-device-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.07);
+}
+
+.input-grid {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.input-grid input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.primary-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Devices */
+.section-title {
+  margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.devices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.device-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.06);
+}
+
+.device-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.online {
+  background: #d1fae5;
+  color: #0f9d58;
+}
+
+.offline {
+  background: #e5e7eb;
+  color: #6b7280;
+}
+
+.device-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  font-size: 1.3rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 42px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.prediction-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.prediction-btn,
+.forecast-btn {
+  flex: 1;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.prediction-btn {
+  background: #9333ea;
+  color: white;
+}
+
+.forecast-btn {
+  background: #6b21a8;
+  color: white;
+}
