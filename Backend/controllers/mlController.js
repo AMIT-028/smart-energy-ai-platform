@@ -33,7 +33,7 @@ exports.getPredictions = async (req, res) => {
     const past = logs.reverse().map(log => log.consumption);
 
     // 2. Call Flask ML service
-    const mlResponse = await axios.post("http://localhost:5001/predict", {
+    const mlResponse = await axios.post("https://smart-energy-ai-platform.onrender.com/predict", {
       device_id: deviceId,
       timestamp: new Date().toISOString()
     });
