@@ -8,3 +8,4 @@ xgboost
 joblib
 python-dotenv
 gunicorn
+python-3.11.9
